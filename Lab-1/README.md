@@ -18,9 +18,9 @@ The primary stakeholders identified for the system are the **Sender Client**, **
 
 ## Problem Statement
 
-The Hyperlocal Courier Dispatch & Tracking Engine is designed to support local parcel delivery through an automated dispatch and tracking process.
+The **Hyperlocal Courier Dispatch & Tracking Engine** is designed to support local parcel delivery through an automated dispatch and tracking process.
 
-The system allows a sender to create an on-demand courier request by providing pickup and destination details. Once a request is created, the system identifies the nearest active delivery rider within a **3 km radius** and assigns the request to that rider.
+The system allows the **Sender Client** to create an on-demand courier request by providing pickup and destination details. Once a request is created, the system identifies the nearest active delivery rider within a **3 km radius** and assigns the request to that rider.
 
 The platform also supports:
 
@@ -29,15 +29,15 @@ The platform also supports:
 - Destination-based OTP verification
 - Secure access to delivery and verification information
 
-The problem statement specifically defines rider assignment within a **3 km radius** and requires delivery status and live GPS telemetry updates to reach the sender with **under 2-second latency**.
+The problem statement specifically defines rider assignment within a **3 km radius** and requires delivery status and live GPS telemetry updates to reach the Sender Client with **under 2-second latency**.
 
 ## System Objectives
 
 The main objectives of the system are to:
 
-1. Enable senders to create courier requests efficiently.
+1. Enable the Sender Client to create courier requests efficiently.
 2. Automatically assign requests to nearby active delivery riders.
-3. Allow senders to track delivery progress and rider location.
+3. Allow the Sender Client to track delivery progress and rider location.
 4. Optimize routes when riders have multiple delivery stops.
 5. Verify successful delivery using a destination OTP.
 6. Provide responsive and secure delivery tracking.
@@ -56,13 +56,13 @@ The system requirements were identified from the assigned problem scenario and d
 
 ### Functional Requirements
 
-The project contains exactly **five functional requirements**, covering:
+The project contains exactly **five functional requirements**:
 
 | ID | Function |
 | :---: | :--- |
 | **FR-001** | Assign the nearest active delivery rider within a 3 km radius. |
 | **FR-002** | Create an on-demand courier request using pickup and destination details. |
-| **FR-003** | Provide delivery status and live GPS tracking to the sender. |
+| **FR-003** | Provide delivery status and live GPS tracking to the Sender Client. |
 | **FR-004** | Generate an optimized route for multiple delivery stops. |
 | **FR-005** | Verify delivery using a destination OTP before completion. |
 
@@ -72,7 +72,7 @@ The project contains exactly **two non-functional requirements**:
 
 | ID | Type | Requirement |
 | :---: | :---: | :--- |
-| **NFR-001** | Performance | Delivery status and live GPS telemetry updates shall reach the sender with under 2-second latency. |
+| **NFR-001** | Performance | Delivery status and live GPS telemetry updates shall reach the Sender Client with under 2-second latency. |
 | **NFR-002** | Security | Delivery information and OTP verification data shall be restricted to authorized users. |
 
 Each requirement includes a priority, measurable acceptance criteria, and rationale.
@@ -128,41 +128,40 @@ The selected core use case for the detailed flow specification is:
 
 ### Preconditions
 
-- The sender is registered and has access to the courier service.
-- Valid pickup and destination details are available.
+- The Sender Client is registered and has access to the courier service.
+- The Sender Client has valid pickup and destination details.
 - The courier service is available to process new requests.
 
 ### Postconditions
 
 - A courier request is successfully created.
 - The request is assigned to an active delivery rider within the specified 3 km radius.
-- The sender receives confirmation of the courier request.
+- The Sender Client receives confirmation of the courier request.
 
 ### Main Success Scenario
 
 1. The Sender Client selects the option to create a new courier request.
 2. The system displays the courier request form.
-3. The sender enters the pickup location and destination details.
-4. The system validates the entered information.
+3. The Sender Client enters the pickup location and destination details.
+4. The system validates the entered pickup and destination information.
 5. The system creates the courier request.
 6. The system identifies the nearest active delivery rider within a 3 km radius.
 7. The system assigns the courier request to the selected rider.
 8. The system sends a dispatch notification to the Delivery Rider.
-9. The system displays confirmation of the assigned courier request to the Sender Client.
+9. The system displays a confirmation of the assigned courier request to the Sender Client.
 10. The use case ends successfully.
 
-### Alternate Flow
+### Alternate Flow – No Eligible Rider Available
 
-If no eligible rider is available within the 3 km radius:
+1. **At Step 6 of the Main Success Scenario, the system cannot find an active delivery rider within the 3 km radius.**
+2. The system informs the Sender Client that no eligible rider is currently available.
+3. The courier request is placed in a pending state.
+4. The Sender Client may retry the request or cancel it.
+5. The use case ends when the request is retried successfully or cancelled.
 
-1. The system informs the Sender Client that no eligible rider is currently available.
-2. The courier request is placed in a pending state.
-3. The Sender Client may retry the request or cancel it.
-4. The use case ends when the request is successfully retried or cancelled.
+The complete use-case flow specification is available in:
 
-The complete use-case flow is available in:
-
-[**Use_Case_Flow.docx**](Use_Case_Flow.docx)
+[**Use_Case_Flow.pdf**](Use_Case_Flow.pdf)
 
 ## Folder Structure
 
@@ -172,4 +171,4 @@ Lab-1/
 ├── README.md
 ├── Requirements.md
 ├── Use_Case_Diagram.pdf
-└── Use_Case_Flow.docx
+└── Use_Case_Flow.pdf
