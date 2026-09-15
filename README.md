@@ -26,8 +26,8 @@ Each lab is organized in a separate directory and contains the required document
 | Lab | Topic | Date of Completion |
 | :---: | :--- | :---: |
 | **Lab 1** | Requirements Engineering & UML Use-Case Modelling | 25 August 2026 |
-| **Lab 2** | — | — |
-| **Lab 3** | — | — |
+| **Lab 2** | Agile Backlog Creation & Sprint Simulation in Jira | 26 August 2026 |
+| **Lab 3** | Component Modelling & Architectural Pattern Selection | 15 September 2026 |
 
 ## Repository Structure
 
@@ -36,8 +36,18 @@ SE-Labs-PES1UG24CS122/
 │
 ├── README.md
 │
-└── Lab-1/
+├── Lab-1/
+│   ├── README.md
+│   ├── Requirements.md
+│   ├── Use_Case_Diagram.pdf
+│   └── Use_Case_Flow.pdf
+│
+├── Lab-2/
+│   ├── README.md
+│   └── Lab2_Deliverable_PES1UG24CS122.pdf
+│
+└── Lab-3/
     ├── README.md
-    ├── Requirements.md
-    ├── Use_Case_Diagram.pdf
-    └── Use_Case_Flow.pdf
+    ├── Component_Diagram.pdf
+    └── Lab_3_Justification.pdf
+```
