@@ -29,6 +29,7 @@ Each lab is organized in a separate directory and contains the required document
 | **Lab 2** | Agile Backlog Creation & Sprint Simulation in Jira | 26 August 2026 |
 | **Lab 3** | Component Modelling & Architectural Pattern Selection | 15 September 2026 |
 | **Lab 4** | VibeCoding – Fixing & Extending a Pygame Game with an LLM | 7 October 2026 |
+| **Lab 5** | Static Code Analysis with Pylint, Flake8 & Bandit | 28 October 2026 |
 
 ## Repository Structure
 
@@ -52,9 +53,21 @@ SE-Labs-PES1UG24CS122/
 │   ├── Component_Diagram.pdf
 │   └── Lab_3_Justification.pdf
 │
-└── Lab-4/
+├── Lab-4/
+│   ├── README.md
+│   ├── Lab4_PES1UG24CS122.pdf
+│   ├── 53_arm_wrestle (Before).mov
+│   └── 53_arm_wrestle (After).mov
+│
+└── Lab-5/
     ├── README.md
-    ├── Lab4_PES1UG24CS122.pdf
-    ├── 53_arm_wrestle (Before).mov
-    └── 53_arm_wrestle (After).mov
+    ├── premium_calculator.py
+    ├── issues.md
+    ├── pylint_report.txt
+    ├── bandit_report.txt
+    ├── flake8_report.txt
+    └── reports/
+        ├── pylint_before.txt
+        ├── bandit_before.txt
+        └── flake8_before.txt
 ```
