@@ -30,6 +30,7 @@ Each lab is organized in a separate directory and contains the required document
 | **Lab 3** | Component Modelling & Architectural Pattern Selection | 15 September 2026 |
 | **Lab 4** | VibeCoding – Fixing & Extending a Pygame Game with an LLM | 7 October 2026 |
 | **Lab 5** | Static Code Analysis with Pylint, Flake8 & Bandit | 28 October 2026 |
+| **Lab 6** | Code Coverage & Branch Coverage Testing using Pytest and Coverage.py | 3 November 2026 |
 
 ## Repository Structure
 
@@ -59,7 +60,7 @@ SE-Labs-PES1UG24CS122/
 │   ├── 53_arm_wrestle (Before).mov
 │   └── 53_arm_wrestle (After).mov
 │
-└── Lab-5/
+├── Lab-5/
     ├── README.md
     ├── premium_calculator.py
     ├── issues.md
@@ -70,4 +71,13 @@ SE-Labs-PES1UG24CS122/
         ├── pylint_before.txt
         ├── bandit_before.txt
         └── flake8_before.txt
+│
+└── Lab-6/
+    ├── README.md
+    ├── phone_repair_quote.py
+    ├── test_phone_repair_quote.py
+    ├── CodeCoverageTest_phone_repair_quote_application.py
+    ├── BranchCoverageTest_phone_repair_quote_application.py
+    ├── code_coverage.png
+    └── branch_coverage.png
 ```
