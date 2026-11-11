@@ -31,6 +31,7 @@ Each lab is organized in a separate directory and contains the required document
 | **Lab 4** | VibeCoding – Fixing & Extending a Pygame Game with an LLM | 7 October 2026 |
 | **Lab 5** | Static Code Analysis with Pylint, Flake8 & Bandit | 28 October 2026 |
 | **Lab 6** | Code Coverage & Branch Coverage Testing using Pytest and Coverage.py | 3 November 2026 |
+| **Lab 7** | Fuzz Testing for Input Validation Bugs using Hypothesis | 11 November 2026 |
 
 ## Repository Structure
 
@@ -61,23 +62,37 @@ SE-Labs-PES1UG24CS122/
 │   └── 53_arm_wrestle (After).mov
 │
 ├── Lab-5/
-    ├── README.md
-    ├── premium_calculator.py
-    ├── issues.md
-    ├── pylint_report.txt
-    ├── bandit_report.txt
-    ├── flake8_report.txt
-    └── reports/
-        ├── pylint_before.txt
-        ├── bandit_before.txt
-        └── flake8_before.txt
+│   ├── README.md
+│   ├── premium_calculator.py
+│   ├── issues.md
+│   ├── pylint_report.txt
+│   ├── bandit_report.txt
+│   ├── flake8_report.txt
+│   └── reports/
+│       ├── pylint_before.txt
+│       ├── bandit_before.txt
+│       └── flake8_before.txt
 │
-└── Lab-6/
+├── Lab-6/
+│   ├── README.md
+│   ├── phone_repair_quote.py
+│   ├── test_phone_repair_quote.py
+│   ├── CodeCoverageTest_phone_repair_quote_application.py
+│   ├── BranchCoverageTest_phone_repair_quote_application.py
+│   ├── code_coverage.png
+│   └── branch_coverage.png
+│
+└── Lab-7/
     ├── README.md
-    ├── phone_repair_quote.py
-    ├── test_phone_repair_quote.py
-    ├── CodeCoverageTest_phone_repair_quote_application.py
-    ├── BranchCoverageTest_phone_repair_quote_application.py
-    ├── code_coverage.png
-    └── branch_coverage.png
+    ├── processor.py
+    ├── test_processor.py
+    ├── Lab7_PES1UG24CS122.pdf
+    ├── original/
+    │   └── processor.py
+    └── Screenshots/
+        ├── 1_original_run.png
+        ├── 2a_failing_tests.png
+        ├── 2b_failing_tests.png
+        ├── 3_fixed_run.png
+        └── 4_passing_tests.png
 ```
